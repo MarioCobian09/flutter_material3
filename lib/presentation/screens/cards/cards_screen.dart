@@ -7,7 +7,7 @@ class CardsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Buttons Screens'),
+        title: const Text('Cards Screens'),
       ),
       body: const Placeholder()
     );
