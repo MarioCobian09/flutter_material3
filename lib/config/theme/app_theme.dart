@@ -32,4 +32,15 @@ class AppTheme {
     )
   );
 
+  // Función que hace una copia de nuestra instancia actual
+  // Haciendo opcional parámetros
+  // Si no los pasamos, conserva los que tenia la instancia
+  AppTheme copyWith({
+    int? selectedColor,
+    bool? isDarkMode
+  }) => AppTheme(
+    selectedColor: selectedColor ?? this.selectedColor,
+    isDarkMode: isDarkMode ?? this.isDarkMode
+  );
+
 }
